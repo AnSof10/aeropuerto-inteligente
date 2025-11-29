@@ -1,21 +1,89 @@
-/* Quita cualquier borde o margen global */
-•⁠ ⁠ {
+/* Reset básico global */
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+/* Fondo de la app */
 body {
   min-height: 100vh;
   width: 100%;
-  background: url("/bg.jpg") no-repeat center center fixed;
-  background-size: cover;
-  font-family: Arial, sans-serif;
-  color: black;
+  background-color: #f5f6fa; /* Fondo limpio y profesional */
+  font-family: "Segoe UI", Arial, sans-serif;
+  color: #222;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
 }
 
+/* Contenedor raíz */
 #root {
-  min-height: 100vh;
   width: 100%;
-  background: transparent !important;
+  max-width: 480px; /* Tus pantallas tendrán un tamaño tipo kiosko */
+  padding: 20px;
+  margin-top: 40px;
+}
+
+/* Contenedor visual general */
+.container {
+  background: white;
+  padding: 28px;
+  border-radius: 14px;
+  box-shadow: 0px 4px 18px rgba(0, 0, 0, 0.12);
+  text-align: center;
+}
+
+/* Logo */
+.logo {
+  width: 240px;
+  margin-bottom: 20px;
+}
+
+/* Títulos */
+.title {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+/* Inputs */
+.input {
+  width: 100%;
+  padding: 12px;
+  font-size: 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  margin-bottom: 14px;
+}
+
+/* Botones */
+.btn {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background 0.22s ease;
+}
+
+/* Botón principal */
+.btn.primary {
+  background: #4b2e83;
+  color: white;
+}
+
+.btn.primary:hover {
+  background: #341f57;
+}
+
+/* Botón secundario */
+.btn.secondary {
+  background: #dddddd;
+}
+
+.btn.secondary:hover {
+  background: #cfcfcf;
 }
