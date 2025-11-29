@@ -1,14 +1,15 @@
-import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import BuscarVuelo from "./pages/BuscarVuelo";
+import RFID from "./pages/RFID";
 
 function App() {
   return (
-    <BrowserRouter>
+    <Router>
       <Routes>
         <Route path="/" element={<BuscarVuelo />} />
-        <Route path="*" element={<Navigate to="/" />} />
+        <Route path="/rfid" element={<RFID />} />
       </Routes>
-    </BrowserRouter>
+    </Router>
   );
 }
 
