@@ -4,13 +4,17 @@ import "../App.css";
 export default function RFID() {
   const navigate = useNavigate();
 
+  const handleScan = () => {
+    alert("RFID escaneado correctamente");
+    navigate("/camara");
+  };
+
   return (
     <div className="container">
-      <h2 className="title">Escanea tu RFID</h2>
-      <p>Acerca tu pase al lector</p>
+      <h1 className="title">Escaneo de RFID</h1>
 
-      <button className="button" onClick={() => navigate("/")}>
-        Finalizar
+      <button className="button" onClick={handleScan}>
+        Escanear tarjeta RFID
       </button>
     </div>
   );

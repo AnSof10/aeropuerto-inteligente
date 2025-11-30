@@ -1,7 +1,7 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import BuscarVuelo from "./pages/BuscarVuelo.jsx";
 import RFID from "./pages/RFID.jsx";
-import Camara from "./Camara.jsx";
+import Camara from "./pages/Camara.jsx";
 
 export default function App() {
   return (
